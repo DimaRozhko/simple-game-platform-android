@@ -1,4 +1,4 @@
-package com.sgp
+package com.simple_game_platform_android
 
 import org.junit.Test
 
