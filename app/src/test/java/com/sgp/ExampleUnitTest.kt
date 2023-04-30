@@ -1,4 +1,4 @@
-package com.example.simple_game_platform_android
+package com.sgp
 
 import org.junit.Test
 

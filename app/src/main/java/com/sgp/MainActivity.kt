@@ -1,4 +1,4 @@
-package com.example.simple_game_platform_android
+package com.sgp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.simple_game_platform_android.ui.theme.SimplegameplatformandroidTheme
+import com.sgp.ui.theme.SimplegameplatformandroidTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

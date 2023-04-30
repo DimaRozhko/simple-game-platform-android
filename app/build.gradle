@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.simple_game_platform_android'
+    namespace 'com.sgp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.simple_game_platform_android"
+        applicationId "com.sgp"
         minSdk 24
         targetSdk 33
         versionCode 1

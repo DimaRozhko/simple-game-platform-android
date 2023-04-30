@@ -1,4 +1,4 @@
-package com.example.simple_game_platform_android.ui.theme
+package com.sgp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
