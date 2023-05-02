@@ -1,12 +1,12 @@
 package com.sgp
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.sgp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,17 +19,33 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navView: BottomNavigationView = binding.navView
+        val authNavView: BottomNavigationView = binding.authNavView
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        val navController = findNavController(R.id.nav_host_fragment_auth_activity_main)
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_login, R.id.navigation_signup, R.id.navigation_user_inf, R.id.navigation_game_inf, R.id.navigation_game_tab
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        authNavView.setupWithNavController(navController)
+    }
+
+    fun activateToGameState() {
+        binding.authNavView.menu.findItem(R.id.navigation_user_inf).isVisible = true
+        binding.authNavView.menu.findItem(R.id.navigation_user_inf).isEnabled = true
+
+        binding.authNavView.menu.findItem(R.id.navigation_game_inf).isVisible = true
+        binding.authNavView.menu.findItem(R.id.navigation_game_inf).isEnabled = true
+
+        binding.authNavView.menu.findItem(R.id.navigation_game_tab).isVisible = true
+        binding.authNavView.menu.findItem(R.id.navigation_game_tab).isEnabled = true
+
+        binding.authNavView.menu.findItem(R.id.navigation_login).isVisible = false
+        binding.authNavView.menu.findItem(R.id.navigation_login).isEnabled = false
+
+        binding.authNavView.menu.findItem(R.id.navigation_signup).isVisible = false
+        binding.authNavView.menu.findItem(R.id.navigation_signup).isEnabled = false
     }
 }

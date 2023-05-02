@@ -2,24 +2,37 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/auth_mobile_navigation"
+    app:startDestination="@+id/navigation_login">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.sgp.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_login"
+        android:name="com.sgp.ui.login.LogInFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.sgp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_signup"
+        android:name="com.sgp.ui.signup.SignUpFragment"
+        android:label="@string/title_signup"
+        tools:layout="@layout/fragment_signup" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.sgp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_user_inf"
+        android:name="com.sgp.ui.userinf.UserInformationFragment"
+        android:label="@string/title_user_inf"
+        tools:layout="@layout/fragment_user_information" />
+
+    <fragment
+        android:id="@+id/navigation_game_tab"
+        android:name="com.sgp.ui.gametab.GameTabFragment"
+        android:label="@string/title_game_tab"
+        tools:layout="@layout/fragment_game_tab" />
+
+    <fragment
+        android:id="@+id/navigation_game_inf"
+        android:name="com.sgp.ui.gameinf.GameInformationFragment"
+        android:label="@string/title_game_inf"
+        tools:layout="@layout/fragment_game_information" />
+
 </navigation>

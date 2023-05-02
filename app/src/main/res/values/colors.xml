@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="sgp_blue_first">#00C2FF</color>
+    <color name="sgp_blue_second">#004155</color>
+    <color name="sgp_blue_hint">#006787</color>
+    <color name="sgp_blue_navbar">#001219</color>
+    <color name="sgp_alert_color">#FF0000</color>
 </resources>
