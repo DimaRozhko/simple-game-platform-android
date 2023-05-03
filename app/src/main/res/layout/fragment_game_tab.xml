@@ -6,18 +6,212 @@
     android:layout_height="match_parent"
     tools:context=".ui.gametab.GameTabFragment">
 
-    <TextView
-        android:id="@+id/text_game_tab"
+    <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:flexDirection="column"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:flexDirection="row"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/button_1_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_1_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_2_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_2_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_3_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_3_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_4_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_4_game_item"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:flexDirection="row"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/button_5_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_5_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_6_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_6_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_7_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_7_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_8_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_8_game_item"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:flexDirection="row"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/button_9_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_9_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_10_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_10_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_11_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_11_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_12_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_12_game_item"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:flexDirection="row"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/button_13_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_13_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_14_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_14_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_15_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_15_game_item"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button_empty_game_table"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="40sp"
+                android:text="@string/default_text_empty_game_item"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.flexbox.FlexboxLayout>
+        
+    </com.google.android.flexbox.FlexboxLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

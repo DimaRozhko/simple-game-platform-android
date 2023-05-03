@@ -15,4 +15,24 @@
     <string name="text_game_name">Name of game:</string>
     <string name="text_rule">Rule:</string>
     <string name="text_history">History:</string>
+    <!-- default text of game table-->
+    <string name="default_text_1_game_item">1</string>
+    <string name="default_text_2_game_item">2</string>
+    <string name="default_text_3_game_item">3</string>
+    <string name="default_text_4_game_item">4</string>
+
+    <string name="default_text_5_game_item">5</string>
+    <string name="default_text_6_game_item">6</string>
+    <string name="default_text_7_game_item">7</string>
+    <string name="default_text_8_game_item">8</string>
+
+    <string name="default_text_9_game_item">9</string>
+    <string name="default_text_10_game_item">10</string>
+    <string name="default_text_11_game_item">11</string>
+    <string name="default_text_12_game_item">12</string>
+
+    <string name="default_text_13_game_item">13</string>
+    <string name="default_text_14_game_item">14</string>
+    <string name="default_text_15_game_item">15</string>
+    <string name="default_text_empty_game_item"> </string>
 </resources>
