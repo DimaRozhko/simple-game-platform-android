@@ -13,6 +13,12 @@ import com.sgp.MainActivity
 import com.sgp.R
 import com.sgp.databinding.FragmentLoginBinding
 import com.sgp.utils.ErrorsSGP
+import com.sgp.utils.services.AuthService
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.URL
+
 
 class LogInFragment : Fragment() {
 
@@ -33,17 +39,20 @@ class LogInFragment : Fragment() {
         val clickLogIn: Button = binding.buttonLogin
 
         clickLogIn.setOnClickListener(View.OnClickListener {
-//            if (!loginViewModel.credValid.validationEmail(binding.emailInputField.text.toString())) {
-//                textLogInView.text = ErrorsSGP.INCORRECT_EMAIL.message
-//            }
-//            else if (!loginViewModel.credValid.validationPassword(binding.passwordInputField.text.toString())) {
-//                textLogInView.text = ErrorsSGP.INCORRECT_PASSWORD.message
-//            }
-//            else {
+            if (!loginViewModel.credValid.validationEmail(binding.emailInputField.text.toString())) {
+                textLogInView.text = ErrorsSGP.INCORRECT_EMAIL.message
+            }
+            else if (!loginViewModel.credValid.validationPassword(binding.passwordInputField.text.toString())) {
+                textLogInView.text = ErrorsSGP.INCORRECT_PASSWORD.message
+            }
+            else if (!checkUser(binding.emailInputField.text.toString(), binding.passwordInputField.text.toString())) {
+                textLogInView.text = ErrorsSGP.UNKNOWN_USER.message
+            }
+            else {
                 textLogInView.text = ""
                 (activity as MainActivity?)!!.activateToGameState()
                 findNavController().navigate(R.id.navigation_user_inf)
-//            }
+            }
         })
         return root
     }
@@ -51,5 +60,9 @@ class LogInFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun checkUser(email: String, password: String) : Boolean {
+        return AuthService().logIn(email, password)
     }
 }

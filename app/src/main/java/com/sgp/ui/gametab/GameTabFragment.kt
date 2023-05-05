@@ -10,6 +10,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.sgp.databinding.FragmentGameTabBinding
 import com.sgp.utils.ConstantsSGP
+import com.sgp.utils.services.AuthService
+import com.sgp.utils.services.GameService
 
 class GameTabFragment : Fragment() {
 
@@ -129,10 +131,12 @@ class GameTabFragment : Fragment() {
                 }
                 if (counterOrder == 15) {
                     congratulationGame = true
+                    binding.textStartTime.text = ""
                 }
             }
             else if(ConstantsSGP.EMPTY.value.toString() == button.text.toString()) {
                 startGame = true
+                binding.textStartTime.text = startTime()
                 val searchValues = arrayOf(
                     arrayOf(MutableLiveData<String>().apply{ value = "10" },
                         MutableLiveData<String>().apply{ value = "14" },
@@ -167,5 +171,9 @@ class GameTabFragment : Fragment() {
             }
         })
         previousItem = TableItemModel(button, rowIdx, colIdx)
+    }
+
+    private fun startTime() : String {
+        return GameService().signUp()
     }
 }

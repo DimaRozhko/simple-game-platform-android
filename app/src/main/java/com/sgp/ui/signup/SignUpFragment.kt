@@ -14,6 +14,7 @@ import com.sgp.MainActivity
 import com.sgp.R
 import com.sgp.databinding.FragmentSignupBinding
 import com.sgp.utils.ErrorsSGP
+import com.sgp.utils.services.AuthService
 
 class SignUpFragment : Fragment() {
 
@@ -40,7 +41,12 @@ class SignUpFragment : Fragment() {
             else if (!signUpViewModel.credValid.validationPassword(binding.passwordInputField.text.toString())) {
                 textLogInView.text = ErrorsSGP.INCORRECT_PASSWORD.message
             }
-            else {
+            else if (checkUser(binding.usernameInputField.text.toString(),
+                    binding.emailInputField.text.toString(),
+                    binding.passwordInputField.text.toString())) {
+                textLogInView.text = ErrorsSGP.USER_ALREADY_EXIST.message
+            }
+            else{
                 textLogInView.text = ""
                 (activity as MainActivity?)!!.activateToGameState()
                 findNavController().navigate(R.id.navigation_user_inf)
@@ -60,5 +66,9 @@ class SignUpFragment : Fragment() {
 
     private fun validationPassword(password: String) : Boolean {
         return !TextUtils.isEmpty(password)
+    }
+
+    private fun checkUser(username: String, email: String, password: String) : Boolean {
+        return AuthService().signUp(username, email, password)
     }
 }
