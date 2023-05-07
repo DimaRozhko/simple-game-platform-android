@@ -124,7 +124,8 @@ class GameTabFragment : Fragment() {
                 var counterOrder = 1
                 for (searchRowValue in gameTabViewModel.gameTable) {
                     for (searchColValue in searchRowValue) {
-                        if (searchColValue.value?.toInt() == counterOrder) {
+                        if (!ConstantsSGP.EMPTY.value.toString().equals(searchColValue.value)
+                            && searchColValue.value?.toInt() == counterOrder) {
                             counterOrder++
                         }
                     }
@@ -174,6 +175,6 @@ class GameTabFragment : Fragment() {
     }
 
     private fun startTime() : String {
-        return GameService().signUp()
+        return GameService().setStartTime()
     }
 }

@@ -207,9 +207,9 @@
             <TextView
                 android:id="@+id/text_view_congratulation"
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="50dp"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textColor="@color/sgp_blue_first"
                 tools:ignore="MissingConstraints"/>
 
@@ -225,18 +225,8 @@
 
             <TextView
                 android:id="@+id/text_view_winner"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="50dp"
-                android:textSize="40sp"
-                android:textColor="@color/sgp_blue_first"
-                android:enabled="false"
-                tools:ignore="MissingConstraints"/>
-
-            <TextView
-                android:id="@+id/text_start_time"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
                 android:layout_marginStart="50dp"
                 android:textSize="20sp"
                 android:textColor="@color/sgp_blue_first"
@@ -244,7 +234,25 @@
                 tools:ignore="MissingConstraints"/>
 
         </com.google.android.flexbox.FlexboxLayout>
-        
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:flexDirection="row"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/text_start_time"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="200dp"
+                android:textSize="20sp"
+                android:textColor="@color/sgp_blue_first"
+                android:enabled="false"
+                tools:ignore="MissingConstraints"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
     </com.google.android.flexbox.FlexboxLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
