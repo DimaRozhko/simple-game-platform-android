@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/navigation_login"
+        android:icon="@drawable/ic_login_black_24dp"
+        android:title="@string/title_login"
+        android:enabled="true"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/navigation_signup"
+        android:icon="@drawable/ic_create_black_24"
+        android:title="@string/title_signup"
+        android:enabled="true"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/navigation_user_inf"
+        android:icon="@drawable/ic_account_circle_24"
+        android:title="@string/title_user_inf"
+        android:enabled="false"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/navigation_game_tab"
+        android:icon="@drawable/ic_videogame_asset_24"
+        android:title="@string/title_game_tab"
+        android:enabled="false"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/navigation_game_inf"
+        android:icon="@drawable/ic_info_24"
+        android:title="@string/title_game_inf"
+        android:enabled="false"
+        android:visible="false" />
+
+</menu>
